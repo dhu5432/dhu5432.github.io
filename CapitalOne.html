@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Capital One</title>
+		<meta charset="utf-8" />
+		<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="index.html#top">Home</a></li>
+					<li><a href="index.html#work">Work</a></li>
+					<li><a href="index.html#portfolio">Portfolio</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+		<div class="container">
+  	<div class="jumbotron">
+    <h3>Capital One</h3>
+  		Software Engineering Internship<br>June 2019-August 2019
+			<br>Technologies Used: AWS (EMR, S3, and Lambda), PySpark, Jenkins
+  </div>
+  <p>
+		<span style="margin-left:2em">
+		In the event of a third party data breach,
+		Capital One has the obligation to identify which of its customers were
+		potentially impacted and to notify them accordingly. When the Equifax breach
+		happened in 2017 (over 150 million people's information compromised), Equifax
+		sent Capital One all the customer data that had been potentially affected so that Capital
+		One could identify all impacted customers.
+		</span>
+		<span style="margin-left:2em">
+		<br>However, the manner in which Capital One went about identifying its customers from
+		the Equifax breach was extremely unsafe. The social security numbers of all the breached
+		Equifax customers as well as all Capital One customers were sitting in raw plaintext form
+		on some on-premise server, where data analysts would run SQL queries to match breached Equifax
+		accounts to Capital One customers based on matching social security numbers.
+		</span>
+		<span style="margin-left:2em">
+		<br>Now that Capital One has gone all in on the cloud (all of its infrastructure is now hosted on
+		AWS), that method of customer identification would be unacceptable for various security reasons such
+		as having plaintext Social Security Numbers sitting at rest, giving human access to all this sensitive
+		information, etc.
+		</span>
+		<span style="margin-left:2em">
+		<br>My internship project was to develop an automated system to do all the customer matching so that a human
+		would not have access to such a large amount of sensitive information. To mitigate having plaintext Social security
+		Numbers sitting at rest, Capital One has now implemented tokeniziation on all sensitive data within the organization.
+		When a third party sends Capital One all breached accounts, all sensitive information in those accounts will also be tokenized
+		at the frontier. So instead of matching on plaintext Social Security Numbers, my system would match on their tokenized counterparts.
+		Given the characteristics of tokenization, a match on tokens means a match on social security numbers...simple enough, right?
+		</span>
+		<span style="margin-left:2em">
+		<br>However, data in the real world is often dirty and two records or accounts that represent the same person might have
+		social security numbers that are one-off or two-off from each other (such as 123456789 vs 223456789) due to data entry error,
+		memory error, etc. When the data analysts were doing their manual matching on customers, it was easy to recognize matching two records
+		that had social security numbers that were one digit off because all other secondary information (like name, DOB, address, etc.) matched.
+		But since all social security numbers are now tokenized, two one-off social security numbers will most likely have completely different
+		tokens, making matching difficult. To mitigate this problem, my program would detokenize the social security numbers of all third party records that did
+		have a match, generate all possible realistic one-off permutations of each social security number, tokenize all permutations, and try to match
+		on these new tokens, while checking secondary information (name, date of birth, etc.) to ensure the two records represent the same person. Since
+		this was being done in-memory, this was a far safer alternative than manual analysis.
+		</span>
+		<span style="margin-left:2em">
+		<br>I built out a contained environment to execute all the matching safely. My match engine uses a highly restricted AWS S3 bucket and a Lambda (to be automatically provisioned
+		by my code when Capital One gets notified of a third party data breach). The Lambda expects the information all of third party breached individuals to land in the S3 bucket (in a CSV format) and
+		will deploy the matching code  (which was written in PySpark) onto a provisioned Elastic MapReduce cluster,
+		pull in all Capital One accounts from its data lake, and identify all customers. Then it will write all the results
+		back into the same S3 bucket that was originally provisioned.
+		</span>
+</p>
+</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
