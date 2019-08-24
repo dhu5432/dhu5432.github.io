@@ -63,17 +63,7 @@
 		at the frontier. So instead of matching on plaintext Social Security Numbers, my system would match on their tokenized counterparts.
 		Given the characteristics of tokenization, a match on tokens means a match on social security numbers...simple enough, right?
 		</span>
-		<span style="margin-left:2em">
-		<br>However, data in the real world is often dirty and two records or accounts that represent the same person might have
-		social security numbers that are one-off or two-off from each other (such as 123456789 vs 223456789) due to data entry error,
-		memory error, etc. When the data analysts were doing their manual matching on customers, it was easy to recognize matching two records
-		that had social security numbers that were one digit off because all other secondary information (like name, DOB, address, etc.) matched.
-		But since all social security numbers are now tokenized, two one-off social security numbers will most likely have completely different
-		tokens, making matching difficult. To mitigate this problem, my program would detokenize the social security numbers of all third party records that did
-		have a match, generate all possible realistic one-off permutations of each social security number, tokenize all permutations, and try to match
-		on these new tokens, while checking secondary information (name, date of birth, etc.) to ensure the two records represent the same person. Since
-		this was being done in-memory, this was a far safer alternative than manual analysis.
-		</span>
+		
 		<span style="margin-left:2em">
 		<br>I built out a contained environment to execute all the matching safely. My match engine uses a highly restricted AWS S3 bucket and a Lambda (to be automatically provisioned
 		by my code when Capital One gets notified of a third party data breach). The Lambda expects the information all of third party breached individuals to land in the S3 bucket (in a CSV format) and
