@@ -17,14 +17,23 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
+				<script type="text/javascript">
+				    var urls = [
+							"carrotcake.html"
+				    ];
 
+				    function goSomewhere() {
+				        var url = urls[Math.floor(Math.random()*urls.length)];
+				        window.location = url; // redirect
+				    }
+				</script>
 				<!-- Intro -->
 					<div id="intro">
 						<h1>Random Ass<br />
 						Recipes</h1>
 						<p>A collection of my favorite food to make.</p>
 						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+							<li><a href="" onclick="goSomewhere(); return false;" class="button icon solid solo fas fa-poo scrolly"></a></li>
 						</ul>
 					</div>
 
@@ -45,9 +54,9 @@
 						<div class="list-group">
 
 						  <a href="carrotcake.html" class="list-group-item list-group-item-action">Carrot Cake</a>
-						  <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+						  <!--<a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
 						  <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-						  <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+						  <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>-->
 						</div>
 
 				<!-- Copyright -->
