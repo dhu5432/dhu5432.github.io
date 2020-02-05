@@ -34,7 +34,7 @@
 
 				<script type="text/javascript">
 				    var urls = [
-							"carrotcake.html"
+							"desserts/carrotcake.html"
 				    ];
 
 				    function goSomewhere() {
@@ -44,34 +44,21 @@
 				</script>
 				<!-- Intro -->
 				<!-- Jumbotron -->
-				<div class="jumbotron mb-0 d-flex align-items-center flex-column justify-content-center min-100" id="header">
+				<div class="jumbotron mb-0 d-flex align-items-center flex-column justify-content-center" id="header">
 
 
 				    <h1 class="display-3">Random Recipes.</h1>
 				    <p>"It's fuckin raw" -Gordon Ramsay</p>
 				    <p class="lead">
-				        <a class="btn btn-outline-secondary btn-lg" href="#" role="button">Learn more</a>
+				        <a class="btn btn-outline-secondary btn-lg" href="#" role="button" onclick="goSomewhere(); return false;" >I'm feeling lucky</a>
 				    </p>
 				</div>
 
-				<div class="container h-10" id="content">
+				<div class="container-list" id="content">
 				    <div class="row h-100 mt-5">
 				        <aside class="col-md-2">
 				            <div class="mt-5 mb-3" id="sidemenu">
-				                <ul class="nav flex-md-column flex-row justify-content-between">
-				                    <li class="nav-item"><a href="#sec1" class="nav-link active pl-0">One</a></li>
-				                    <li class="nav-item"><a href="#sec2" class="nav-link pl-0">Two</a></li>
-				                    <li class="nav-item">
-				                        <a href="#sec3" class="nav-link pl-0">Three</a>
-				                        <ul class="nav flex-md-column ml-2 hidden-sm-down">
-				                            <li class="nav-item"><a href="#sec3a" class="nav-link">Section A</a></li>
-				                            <li class="nav-item"><a href="#sec3b" class="nav-link">Section B</a></li>
-				                        </ul>
-				                    </li>
-				                    <li class="nav-item"><a href="#sec4" class="nav-link pl-0">Four</a></li>
-				                    <li class="nav-item"><a href="#sec5" class="nav-link pl-0">Five</a></li>
-				                    <li class="nav-item"><a href="#sec6" class="nav-link pl-0">Six</a></li>
-				                </ul>
+
 				            </div>
 				        </aside>
 				        <main class="col py-5">
@@ -88,7 +75,7 @@
 
 																	 <ul class="list-group list-group-flush">
 																		 <div class="list-group">
-																		  <a href="carrotcake.html" class="list-group-item list-group-item-action">Carrot Cake</a>
+																		  <a href="desserts/carrotcake.html" class="list-group-item list-group-item-action">Carrot Cake</a>
 																		  <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
 																		  <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
 																		</div>
@@ -163,121 +150,33 @@
 				                    </div>
 				                </div>
 				                <div class="col-lg-3 col-12">
-				                    <div class="card bg-faded border-0 mb-3">
-				                        <div class="card-body">
-				                            <h3 class="card-title">Card</h3>
-				                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-				                            <a href="#" class="btn btn-outline-secondary">Outline</a>
-				                        </div>
-				                    </div>
-				                    <div class="card bg-faded border-0 mb-3">
-				                        <div class="card-body">
-				                            <h3 class="card-title">Ad</h3>
-				                            <p class="card-text">Display supporters and advertisements here.</p>
-				                            <a href="#" class="btn btn-outline-secondary">C-T-A</a>
-				                        </div>
-				                    </div>
-				                    <div class="card bg-faded border-0 mb-3">
-				                        <div class="card-body">
-				                            <h3 class="card-title">Card</h3>
-				                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-				                            <a href="#" class="btn btn-outline-secondary">Outline</a>
-				                        </div>
-				                    </div>
+
+
+
 				                </div>
 				            </div>
 				        </main>
 				    </div>
 				</div>
-				<footer class="bg-dark text-white py-4">
-				    <div class="container">
-				        <div class="row">
-				            <div class="col-md-3 col-sm-6 pl-0">
-				                <ul class="nav flex-column">
-				                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-				                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-				                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-				                    <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
+				<footer class="bg-dark text-white">
+				        <div class>
+				                <ul class="nav justify-content-center">
+				                    <li class="nav-item"><a href="https://www.instagram.com/danielwho2/" class="nav-link pr-0"><i class="fab fa-instagram"></i></a></li>
+				                    <li class="nav-item"><a href="https://www.facebook.com/HuBear" class="nav-link pr-0"><i class="fab fa-facebook-square	"></i></a></li>
+				                    <li class="nav-item"><a href="mailto:daniellovespie@gmail.com" class="nav-link pr-0"><i class="fas fa-envelope"></i></a></li>
 				                </ul>
-				            </div>
-				            <div class="col-md-3 col-sm-6 pl-0">
-				                <ul class="nav flex-column">
-				                    <li class="nav-item"><a href="#" class="nav-link">More</a></li>
-				                    <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
-				                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-				                    <li class="nav-item"><a href="#" class="nav-link">Legal</a></li>
-				                </ul>
-				            </div>
-				            <div class="col-md-4 ml-auto text-right">
-				                <small class="text-uppercase">Connect on social media</small>
-				                <ul class="nav justify-content-end">
-				                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-pinterest fa-lg"></i></a></li>
-				                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-twitter fa-lg"></i></a></li>
-				                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-instagram fa-lg"></i></a></li>
-				                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-facebook fa-lg"></i></a></li>
-				                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-skype fa-lg"></i></a></li>
-				                </ul>
-				            </div>
-				            <div class="col-12 text-right small">
-				                @2019 Company Name
-				            </div>
 				        </div>
-				    </div>
 				</footer>
 
-				<div id="modal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				    <div class="modal-dialog modal-lg">
-				        <div class="modal-content">
-				            <div class="modal-header">
-				                <h3 id="myModalLabel">Hello.</h3>
-				                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				            </div>
-				            <div class="modal-body">
 
-				                <div class="form-group row">
-				                    <label for="example-text-input" class="col-2 col-form-label">Text</label>
-				                    <div class="col-10">
-				                        <input class="form-control" type="text" value="Mike McDonald" id="example-text-input">
-				                    </div>
-				                </div>
-				                <div class="form-group row">
-				                    <label for="example-search-input" class="col-2 col-form-label">Search</label>
-				                    <div class="col-10">
-				                        <input class="form-control" type="search" value="How to responsive design" id="example-search-input">
-				                    </div>
-				                </div>
-				                <div class="form-group row">
-				                    <label for="example-email-input" class="col-2 col-form-label">Email</label>
-				                    <div class="col-10">
-				                        <input class="form-control" type="email" value="email@example.com" id="example-email-input">
-				                    </div>
-				                </div>
-				                <div class="form-group row">
-				                    <label for="example-url-input" class="col-2 col-form-label">URL</label>
-				                    <div class="col-10">
-				                        <input class="form-control" type="url" value="http://codeply.com" id="example-url-input">
-				                    </div>
-				                </div>
-				                <div class="form-group row">
-				                    <label for="example-tel-input" class="col-2 col-form-label">Phone</label>
-				                    <div class="col-10">
-				                        <input class="form-control" type="tel" value="1-(202)-555-5555" id="example-tel-input">
-				                    </div>
-				                </div>
-				            </div>
-				            <div class="modal-footer">
-				                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-				                <button class="btn btn-primary">Save changes</button>
-				            </div>
-				        </div>
-				    </div>
-				</div>
 
 	</body>
 
 	<style>
 
-
+		.container-list {
+			padding-top: 0px;
+		}
 		.centered {
 			padding-right: 20%;
 			padding-left: 20%;

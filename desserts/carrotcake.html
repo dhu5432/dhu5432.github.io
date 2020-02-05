@@ -32,9 +32,23 @@
 	  			});
 			});
 		</script>
-    <style>
-      ul { display:table; margin:0 auto;}
-  </style>
+  <style>
+    ul {
+      display: inline-block;
+      text-align: left;
+    }
+
+    .align-center {
+      text-align: center;
+    }
+
+    .container-ingredients {
+  width: 80%;
+  padding: 2em;
+  text-align: center;
+}
+
+    </style>
 
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 			<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -67,18 +81,18 @@
 				<!-- Jumbotron -->
 				<div class="jumbotron mb-0 d-flex align-items-center flex-column justify-content-center" id="header">
 				    <h1 class="display-4">Carrot Cake</h1>
+            <a class="btn btn-outline-secondary btn-lg" href="index.html" role="button">Home</a>
 
 				</div>
 
-        <div class="text-center"><img src="images/carrot.png" alt=""/></div>
 
 				<div class="container h-10" id="content">
-				    <div class="row h-100 mt-5">
+				    <div class="container-ingredients">
 
-				        <main class="col py-5">
+				        <main>
 				        <h1 class="text-center">Ingredients</h1>
-                  <h2 class="text-center">Carrot Cake</h2>
-                  <div>
+                  <h3 class="text-center">Carrot Cake</h3>
+                  <div class="align-center">
 										<ul>
 											<li>2 cups (250 grams) all-purpose flour</li>
 											<li>2 teaspoons baking powder</li>
@@ -97,8 +111,8 @@
 
 										</ul>
 									</div>
-                  <h2 class="text-center">Cream Cheese Frosting</h2>
-                    <div class>
+                  <h3 class="text-center">Cream Cheese Frosting</h3>
+                    <div class="align-center">
                   	   <ul>
                   		     <li>1 (8 ounce) package brick style cream cheese, softened to room temperature</li>
                   				 <li>1/2 cup (115 grams) unsalted butter, softened to room temperature</li>
