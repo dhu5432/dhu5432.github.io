@@ -7,7 +7,41 @@
 <html>
 
 	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+		$(function(){
+			var $curParent, Content;
+			$(document).delegate("p","click", function(){
 
+			if($(this).closest("s").length) {
+				Content = $(this).parent("s").html();
+				$curParent = $(this).closest("s");
+				$(Content).insertAfter($curParent);
+				$(this).closest("s").remove();
+			}
+			else {
+				$(this).wrapAll("<s />");
+			}
+		});
+		});
+		</script>
+		<script>
+		$(function(){
+			var $curParent, Content;
+			$(document).delegate("li","click", function(){
+
+			if($(this).closest("s").length) {
+				Content = $(this).parent("s").html();
+				$curParent = $(this).closest("s");
+				$(Content).insertAfter($curParent);
+				$(this).closest("s").remove();
+			}
+			else {
+				$(this).wrapAll("<s />");
+			}
+		});
+		});
+		</script>
 		<title>Carrot Cake</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -72,7 +106,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="desserts.html">
 										<h3>Desserts</h3>
 										<!--<p>Feugiat tempus veroeros dolor</p>-->
 									</a>
@@ -103,10 +137,11 @@
 										<p>January 22, 2020</p>
 									</div>
 								</header>
+
 									<h1><u>Ingredients</u></h1>
 									<h3>Carrot Cake</h3>
 									<ul>
-										<li>2 cups (250 grams) all-purpose flour</li>
+										<li onclick=>2 cups (250 grams) all-purpose flour</li>
  					  				<li>2 teaspoons baking powder</li>
  					  				<li>1 teaspoon baking soda</li>
  					  				<li>1 and 1/2 teaspoons ground cinnamon</li>
@@ -147,7 +182,7 @@
 				to the wire rack to finish cooling. </li>
 								</ol>
 
-								<h3>Cream Cheese Frosting</h3
+								<h3>Cream Cheese Frosting</h3>
 								<p>In the bowl of a stand mixer fitted with the paddle attachment, or in
 									a large mixing bowl using a hand-held mixer, beat the cream cheese until smooth.
 								Add the butter and mix for about 30 seconds-1 minute until well combined and smooth.
@@ -177,11 +212,12 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
 
+
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
 	</body>
 </html>
