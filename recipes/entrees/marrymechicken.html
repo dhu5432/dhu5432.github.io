@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+		$(function(){
+			var $curParent, Content;
+			$(document).delegate("p","click", function(){
+
+			if($(this).closest("s").length) {
+				Content = $(this).parent("s").html();
+				$curParent = $(this).closest("s");
+				$(Content).insertAfter($curParent);
+				$(this).closest("s").remove();
+			}
+			else {
+				$(this).wrapAll("<s />");
+			}
+		});
+		});
+		</script>
+		<script>
+		$(function(){
+			var $curParent, Content;
+			$(document).delegate("li","click", function(){
+
+			if($(this).closest("s").length) {
+				Content = $(this).parent("s").html();
+				$curParent = $(this).closest("s");
+				$(Content).insertAfter($curParent);
+				$(this).closest("s").remove();
+			}
+			else {
+				$(this).wrapAll("<s />");
+			}
+		});
+		});
+		</script>
+		<title>Marry Me Chicken</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../recipes.html">Random Recipes</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="../sides/sides.html">Sides/Appetizers</a></li>
+								<li><a href="entrees.html">Entrees</a></li>
+								<li><a href="../desserts/desserts.html">Desserts</a></li>
+								<li><a href="../random/random.html">Miscellaneous</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<!--<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>-->
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+
+
+						<!-- Links -->
+						<section>
+							<ul class="links">
+								<li>
+									<a href="../recipes.html">
+										<h3>All</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="../sides/sides.html">
+										<h3>Sides/Appetizers</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="entrees.html">
+										<h3>Entrees</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="../desserts/desserts.html">
+										<h3>Desserts</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="../random/random.html">
+										<h3>Miscellaneous</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+							</ul>
+						</section>
+
+						<!-- Actions -->
+
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+
+										<h2><a href="#">Marry Me Chicken</a></h2>
+										<p>February 14, 2020</p>
+									</div>
+								</header>
+
+									<h1><u>Ingredients</u></h1>
+									<ul>
+										<li>1 tablespoon olive oil</li>
+ 					  				<li>3-4 large chicken breasts</li>
+ 					  				<li>Salt</li>
+										<li>Pepper</li>
+										<li>2 cloves garlic (minced)</li>
+										<li>1 teaspoon thyme</li>
+										<li>1 teaspoon red pepper flakes (use <sup>1</sup>&frasl;<sub>2</sub> teaspoon for less spice)</li>
+										<li><sup>3</sup>&frasl;<sub>4</sub> cup chicken broth</li>
+										<li><sup>1</sup>&frasl;<sub>2</sub> cup heavy cream</li>
+										<li><sup>1</sup>&frasl;<sub>2</sub> sundried tomatoes (chopped)</li>
+										<li><sup>1</sup>&frasl;<sub>4</sub> - <sup>1</sup>&frasl;<sub>2</sub> cup freshly grated Parmesan cheese</li>
+										<li>Fresh basil</li>
+
+
+
+
+									</ul>
+
+								<h1><u>Instructions</u></h1>
+								<ol>
+							<li>Preheat oven to 375&#8457;. In a large oven-safe skillet, heat oil over medium-high heat. Season chicken generously with
+							salt and pepper and sear until golden (about 4-5 minutes per side). Transfer chicken to a plate. </li>
+							<li>Return skillet to medium heat. Add garlic and cook for 1 minute.</li>
+							<li>Stir in thyme, red pepper flakes, chicken broth, and heavy cream. Cook for 5 minutes, stirring often.</li>
+							<li>Stir in sundried tomatoes and Parmesan cheese.</li>
+							<li>Return chicken to skillet and spoon sauce all over chicken breasts. Bake until chicken
+							is cooked through (about 15-18 minutes). Garnish with basil and grated parmesan cheese, if so desired.</li>
+
+								</ol>
+
+
+
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/dhu5432/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.instagram.com/danielwho2/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="mailto:daniellovespie@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+
+
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>
