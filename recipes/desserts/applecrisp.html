@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+		$(function(){
+			var $curParent, Content;
+			$(document).delegate("p","click", function(){
+
+			if($(this).closest("s").length) {
+				Content = $(this).parent("s").html();
+				$curParent = $(this).closest("s");
+				$(Content).insertAfter($curParent);
+				$(this).closest("s").remove();
+			}
+			else {
+				$(this).wrapAll("<s />");
+			}
+		});
+		});
+		</script>
+		<script>
+		$(function(){
+			var $curParent, Content;
+			$(document).delegate("li","click", function(){
+
+			if($(this).closest("s").length) {
+				Content = $(this).parent("s").html();
+				$curParent = $(this).closest("s");
+				$(Content).insertAfter($curParent);
+				$(this).closest("s").remove();
+			}
+			else {
+				$(this).wrapAll("<s />");
+			}
+		});
+		});
+		</script>
+		<title>Apple Crisp</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../recipes.html">Random Recipes</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="../sides/sides.html">Sides/Appetizers</a></li>
+								<li><a href="../entrees/entrees.html">Entrees</a></li>
+								<li><a href="desserts.html">Desserts</a></li>
+								<li><a href="../random/random.html">Miscellaneous</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<!--<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>-->
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+
+
+						<!-- Links -->
+						<section>
+							<ul class="links">
+								<li>
+									<a href="../recipes.html">
+										<h3>All</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="../sides/sides.html">
+										<h3>Sides/Appetizers</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="../entrees/entrees.html">
+										<h3>Entrees</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="desserts.html">
+										<h3>Desserts</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="../random/random.html">
+										<h3>Miscellaneous</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+							</ul>
+						</section>
+
+						<!-- Actions -->
+
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+
+										<h2><a href="#">Apple Crisp</a></h2>
+										<p>February 14, 2020</p>
+									</div>
+								</header>
+
+									<h1><u>Ingredients</u></h1>
+									<ul>
+										<li>3 tablespoons granulated sugar</li>
+										<li><sup>1</sup>&frasl;<sub>2</sub> cup of flour</li>
+										<li><sup>1</sup>&frasl;<sub>4</sub> teaspoons of nutmeg</li>
+										<li><sup>3</sup>&frasl;<sub>4</sub> cup of light brown sugar</li>
+										<li><sup>1</sup>&frasl;<sub>4</sub> teapoons of fine salt</li>
+
+										<li>1 teaspoon of ground cinnamon</li>
+										<li>6 tablespoons of unsalted butter (cold, cut into small pieces, plus more for coating the dish)</li>
+										<li><sup>3</sup>&frasl;<sub>4</sub> cup of rolled oats (uncooked)</li>
+										<li>2 and <sup>1</sup>&frasl;<sub>2</sub> Granny Smith apples (peeled, cored, and sliced)</li>
+									</ul>
+
+								<h1><u>Instructions</u></h1>
+								<ol>
+									<li>Preheat oven to 350&#8457;. Lightly coat baking dish with butter. </li>
+							<li>Combine apples, granulated sugar, cinnamon, nutmeg, and salt in a large bowl and toss to coat. </li>
+							<li>Place the apple mixture in the prepared baking dish and set aside.</li>
+							<li>Using the same bowl, mix together the brown sugar, oats, and flour until evenly combined. With your fingertips,
+							blend in the butter pieces until small clumps form and the butter is well incorporated, about 2 minutes.</li>
+							<li>Sprinkle the topping evenly over the apples and bake until the streusel is crispy and the
+								apples are tender, about 50-60 minutes. Let cool on a rack at least 30 minutes before
+								serving. Serve with vanilla ice cream. </li>
+								</ol>
+
+
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/dhu5432/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.instagram.com/danielwho2/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="mailto:daniellovespie@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+
+
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>
