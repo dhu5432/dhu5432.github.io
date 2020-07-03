@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+		$(function(){
+			var $curParent, Content;
+			$(document).delegate("p","click", function(){
+
+			if($(this).closest("s").length) {
+				Content = $(this).parent("s").html();
+				$curParent = $(this).closest("s");
+				$(Content).insertAfter($curParent);
+				$(this).closest("s").remove();
+			}
+			else {
+				$(this).wrapAll("<s />");
+			}
+		});
+		});
+		</script>
+		<script>
+		$(function(){
+			var $curParent, Content;
+			$(document).delegate("li","click", function(){
+
+			if($(this).closest("s").length) {
+				Content = $(this).parent("s").html();
+				$curParent = $(this).closest("s");
+				$(Content).insertAfter($curParent);
+				$(this).closest("s").remove();
+			}
+			else {
+				$(this).wrapAll("<s />");
+			}
+		});
+		});
+		</script>
+		<title>Mango Panna Cotta</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../recipes.html">Random Recipes</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="../sides/sides.html">Sides/Appetizers</a></li>
+								<li><a href="../entrees/entrees.html">Entrees</a></li>
+								<li><a href="desserts.html">Desserts</a></li>
+								<li><a href="../random/random.html">Miscellaneous</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<!--<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>-->
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+
+
+						<!-- Links -->
+						<section>
+							<ul class="links">
+								<li>
+									<a href="../recipes.html">
+										<h3>All</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="../sides/sides.html">
+										<h3>Sides/Appetizers</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="../entrees/entrees.html">
+										<h3>Entrees</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="desserts.html">
+										<h3>Desserts</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="../random/random.html">
+										<h3>Miscellaneous</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+							</ul>
+						</section>
+
+						<!-- Actions -->
+
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+
+										<h2><a href="#">Mango Panna Cotta</a></h2>
+										<p>July 3, 2020</p>
+									</div>
+								</header>
+
+								<h1><u>Ingredients</u></h1>
+								<h3>Mango Layer</h3>
+								<ul>
+									<li>300 grams of peeled, cut mangos (approximately 3 small mangos or 2 medium mangos)</li>
+									<li>40 grams of water</li>
+									<li>20 grams of granulated sugar</li>
+									<li>1 teaspoon lemon juice</li>
+									<li>3.2 grams (or 1 heaping teaspoon) gelatin powder</li>
+								</ul>
+								<h3>Panna Cotta Layer</h3>
+								<ul>
+									<li>300 grams heavy whipping cream</li>
+									<li>30 grams of granulated sugar</li>
+									<li>2 teaspoons pure vanilla extract</li>
+									<li>3 grams (or 1 teaspoon) gelatin powder</li>
+								</ul>
+
+								<h1><u>Instructions</u></h1>
+								<h3>Mango Layer</h3>
+								<ol>
+									<li>Purée the mango chunks and lemon juice in a blender until smooth. Set aside<sup>1</sup>.</li>
+							<li>Mix sugar and gelatin powder together and boil the water in a saucepan.</li>
+							<li>Once the water is boiling, turn off the heat and gradually stir in
+							sugar/gelatin mixture. Stir vigorously until fully disolved.</li>
+							<li>Once fully dissolved, pour mixture into mango purée and stir well.</li>
+							<li>Pour into glasses. Leave at least half a glass of space for the panna cotta layer. </li>
+							<li>Chill in refrigerator for at least 2 hours to set.</li>
+								</ol>
+
+								<h3>Panna Cotta Layer</h3>
+								<ol>
+									<li>Mix sugar and gelatin powder together and bring the cream up a simmer in a saucepan.</li>
+							<li>Once the cream is simmering, gradually stir in sugar/gelatin mixture. Stir vigorously until fully dissolved.</li>
+							<li>Let the cream mixture cool to room temperature.</li>
+							<li>Once cooled, pour the cream mixture on top of the mango layer in the glasses.</li>
+							<li>Chill in refrigerator for at least 5-6 hours to set.</li>
+								</ol>
+
+
+								<sup>1</sup>Optional: save a little bit of mango purée as a garnish.
+
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/dhu5432/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.instagram.com/danielwho2/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="mailto:daniellovespie@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+
+
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>
