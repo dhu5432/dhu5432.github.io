@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+		$(function(){
+			var $curParent, Content;
+			$(document).delegate("p","click", function(){
+
+			if($(this).closest("s").length) {
+				Content = $(this).parent("s").html();
+				$curParent = $(this).closest("s");
+				$(Content).insertAfter($curParent);
+				$(this).closest("s").remove();
+			}
+			else {
+				$(this).wrapAll("<s />");
+			}
+		});
+		});
+		</script>
+		<script>
+		$(function(){
+			var $curParent, Content;
+			$(document).delegate("li","click", function(){
+
+			if($(this).closest("s").length) {
+				Content = $(this).parent("s").html();
+				$curParent = $(this).closest("s");
+				$(Content).insertAfter($curParent);
+				$(this).closest("s").remove();
+			}
+			else {
+				$(this).wrapAll("<s />");
+			}
+		});
+		});
+		</script>
+		<title>Whiskey Walnut Blondies</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../recipes.html">Random Recipes</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="../sides/sides.html">Sides/Appetizers</a></li>
+								<li><a href="../entrees/entrees.html">Entrees</a></li>
+								<li><a href="desserts.html">Desserts</a></li>
+								<li><a href="../random/random.html">Miscellaneous</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<!--<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>-->
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+
+
+						<!-- Links -->
+						<section>
+							<ul class="links">
+								<li>
+									<a href="../recipes.html">
+										<h3>All</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="../sides/sides.html">
+										<h3>Sides/Appetizers</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="../entrees/entrees.html">
+										<h3>Entrees</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="desserts.html">
+										<h3>Desserts</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+								<li>
+									<a href="../random/random.html">
+										<h3>Miscellaneous</h3>
+										<!--<p>Feugiat tempus veroeros dolor</p>-->
+									</a>
+								</li>
+							</ul>
+						</section>
+
+						<!-- Actions -->
+
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+
+										<h2><a href="#">Whiskey Walnut Blondies</a></h2>
+										<p>November 2, 2020</p>
+									</div>
+								</header>
+
+									<h1><u>Ingredients</u></h1>
+									<ul>
+										<li>1 stick (or 4 ounces) of butter</li>
+										<li>1 cup of packed dark brown sugar</li>
+										<li>1 egg </li>
+										<li><sup>1</sup>&frasl;<sub>2</sub> teaspoon of salt</li>
+										<li>1 teaspoon of vanilla extra</li>
+
+										<li>2 tablespoons of whiskey</li>
+										<li>1 cup of all purpose flour</li>
+										<li><sup>1</sup>&frasl;<sub>2</sub> cup of roughly chopped walnuts</li>
+										<li>Optional: <sup>1</sup>&frasl;<sub>4</sub>-<sup>1</sup>&frasl;<sub>2</sub> cup of chocolate chips</li>
+									</ul>
+
+								<h1><u>Instructions</u></h1>
+								<ol>
+									<li>Preheat oven to 350&#8457;. Lightly butter (or oil) an 8 or 9 inch square baking pan. </li>
+							<li>Brown the butter in a saucepan over medium heat on the stove<sup>1</sup>. </li>
+							<li>Pour the browned butter into a bowl with the brown sugar. Let cool for 3-5 minutes.</li>
+							<li>Beat the brown sugar/butter mixture using a hand (or stand) mixer until well combined.</li>
+							<li>Add the egg and continue to beat until well combined and fluffy (for 2-4 minutes).</li>
+							<li>Add the whiskey, vanilla extract, and salt and beat for another 2 minutes.</li>
+							<li>Add the flour and beat until well combined.</li>
+							<li>Fold in the chopped walnuts and (optional) chocolate chips. </li>
+							<li>Spread the mixture into your buttered/oiled pan and bake for 25 minutes or until the edges begin to brown.</li>
+
+								</ol>
+								<sup>1</sup>Brown the butter by melting it on the stove until it becomes a golden caramel color This will take several minutes and
+								 it's easiest to keep swirling the pan with your hand while it browns. Be carful not to burn it.
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/dhu5432/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.instagram.com/danielwho2/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="mailto:daniellovespie@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+
+
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>
