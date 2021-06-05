@@ -30,12 +30,12 @@
 						</nav>
 						<nav class="main">
 							<ul>
-								<!--<li class="search">
+								<li class="search">
 										<a class="fa-search" href="#search">Search</a>
 										<form id="search" method="get" action="#">
-											<input type="text" name="query" placeholder="Search" />
+											<input type="text" name="query" id="myInput" placeholder="Search" onkeyup="myFunction()" />
 										</form>
-									</li> -->
+									</li>
 								<li class="menu">
 									<a class="fa-bars" href="#menu">Menu</a>
 								</li>
@@ -91,7 +91,7 @@
 				<!-- Main -->
 					<div id="main">
 							<section>
-							<div class="mini-posts">
+							<div class="mini-posts" id="myUL">
 
 								<!-- Mini Post -->
 									<article class="mini-post">
@@ -118,10 +118,7 @@
 
 				<!-- Sidebar -->
 					<section id="sidebar">
-						<ul class="actions pagination">
-														<li><a href="" class="disabled button large previous">Previous Page</a></li>
-														<li><a href="#" class="disabled button large next">Next Page</a></li>
-						</ul>
+
 						<script type="text/javascript">
 										    var urls = [
 													"marrymechicken.html"
@@ -175,3 +172,24 @@
 
 	</body>
 </html>
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('article');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
